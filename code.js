@@ -63,8 +63,8 @@ function pancakeSort(arr)
         
         if(lowBound != a)
         {
-            flip(arr, lowBound + 1);
-            flip(arr, (a+1));
+            arr = flip(arr, lowBound + 1);
+            arr = flip(arr, a + 1);
         }
     }
     
