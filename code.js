@@ -46,28 +46,27 @@ return flippedArr;
 
 
 // Use only flip() here to manipulate the array
-function pancakeSort(array)
+function pancakeSort(arr)
 {
-    var arrLen0 = array.length;
-    
-    for (var i = arrLen0; i>1; i--)
+    var arrLen0 = arr.length;
+    for(var a = 0; a < arrLen0; a++)
     {
-        var flipBool = false;
+        var lowBound = a;
         
-        for (var j = 0; j < i - 1; j++)
+        for(var b = (a+1); b < arrLen0; b++)
         {
-            if (array[j] > array[j + 1])
+            if(array[b] < array[lowBound])
             {
-                array = flip(array, j + 2);
-                flipBool = true;
+                lowBound = b;
             }
         }
         
-        if(flipBool)
+        if(lowBound != a)
         {
-            array = flip(array, i);
+            flip(array, lowBound + 1);
+            flip(array, (a+1));
         }
     }
     
-    return array;
+    return arr;
 }
