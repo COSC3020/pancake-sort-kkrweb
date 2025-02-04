@@ -55,7 +55,7 @@ function pancakeSort(arr)
         
         for(var b = (a+1); b < arrLen0; b++)
         {
-            if(array[b] < array[lowBound])
+            if(arr[b] < arr[lowBound])
             {
                 lowBound = b;
             }
@@ -63,8 +63,8 @@ function pancakeSort(arr)
         
         if(lowBound != a)
         {
-            flip(array, lowBound + 1);
-            flip(array, (a+1));
+            flip(arr, lowBound + 1);
+            flip(arr, (a+1));
         }
     }
     
