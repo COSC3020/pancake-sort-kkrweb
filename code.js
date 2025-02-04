@@ -49,25 +49,8 @@ return flippedArr;
 function pancakeSort(arr)
 {
     var arrLen0 = arr.length;
-    for(var a = 0; a < (arrLen0-1); a++)
-    {
-        var lowBound = a;
-        
-        for(var b = (a+1); b < arrLen0; b++)
-        {
-            if(arr[b] < arr[lowBound])
-            {
-                lowBound = b;
-            }
-        }
-        
-        if(lowBound != a)
-        {
-            arr = flip(arr, lowBound + 1);
-            arr = flip(arr, (a+1));
-        }
-    }
-    
-    return arr;
-}
+   //nuking this
 
+    return arr;
+
+}
