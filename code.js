@@ -1,9 +1,10 @@
-//
-//
-//
+// Kane Kriz
+// UWYO COSC 3020
+// 4 Feb 2025
 //
 //
 
+//work in progress
 function flip(array, n)
 {
     var arrLen = array.length;
@@ -11,7 +12,7 @@ function flip(array, n)
     var flippedArr = [];
     var tmpNum; //probably not needed
     
-    if(n<1)
+    if(n<=1)
     {
         return array;
     }
