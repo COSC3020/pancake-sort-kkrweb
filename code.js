@@ -5,6 +5,9 @@
 //
 
 //work in progress
+// also doesnt pass either test in current state
+// good base to work from though I suppose
+
 function flip(array, n)
 {
 var arrLen = array.length;
