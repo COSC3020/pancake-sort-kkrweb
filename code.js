@@ -5,13 +5,6 @@
 //
 
 
-
-//work in progress
-// also doesnt pass either test in current state
-// good base to work from though I suppose
-
-
-
 function flip(array, n)
 {
 var arrLen = array.length;
@@ -61,9 +54,10 @@ function pancakeSort(array)
     for(var x = arrLen0-1; x>=1; x--)//loop iterates with number of indices in the array as the counter, x
     {
         
-        var endElement = array[0]; //will this break if the array is empty []? Probably
+        var endElement = array[0]; //will this break if the array is empty []? Probably. Well it passed the test so maybe not...
         var endPos = 0;
-        //needs both of the above vars or could be done with just one or the other? Something to think about
+        //needs both of the above vars or could be done with just one or the other? Something to think about. 
+        //Still afraid to mess with it now that it has passed the testjs file
         for(var i=0; i<=x; i++)
         {
             if (array[i] > endElement)
@@ -78,7 +72,7 @@ function pancakeSort(array)
         {
             array = flip(array, endPos + 1);
         }
-        array = flip(array, x + 1); //broken with x, functional with x+1? 
+        array = flip(array, x + 1); //broken with x, functional with x+1?
     }
 
     return array;
