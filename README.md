@@ -32,14 +32,15 @@ Add your answer to this markdown file.
 //
 
 Start Date: 4 Feb 2025
-Response Added: 13 Feb 2025
+Response Added: 13 Feb 2025, prior to first feedback request
+
 
 Name: Kane Kriz
 
 //
 
 RESPONSE:
-The asymptotic runtime of my pancake sorting algorithm is as follows:
+The asymptotic runtime of my pancake sorting algorithm is as follows...separated as specified within the problem details:
 
 In terms of the number of comparisons of pancakes, the asymptotic runtime of the algorithm can be seen via considering the for loop in pancakeSort where it iterates through x = arrLen0-1 to x >= 1. 
 Each iteration of the loop makes approximately n comparisons to find the maximum element in the relevant, currently considered subarray.
@@ -47,10 +48,10 @@ Since there are n iterations of this above process, the total number of comparis
 This quadratic runtime occurs due to the algorithm considering all elements to identify the maximum within each of the iterations.
 
 In terms of the number of flips, the asymptotic runtime of the algorithm can be seen as of linear complexity, Θ(n).
-The asymptotic runtime of the algorithm in this case is linear as in each iteration, the algorithm performs a maximum of two possible flips.
+The asymptotic runtime of the algorithm in this case is linear as in each iteration, the algorithm performs at most two possible flips.
 Following the correct implementation of pancakeSort, one of these flips is used to move the maximum element to the front of the array(flip(array, endPos + 1)).
-The other flip has the purpose of moving an element to the correct position. (flip(array, x + 1). 
-Due to this, the total number of flips in the worst case has an asymptotic complexity of Θ(n), as there are at most two flips per iteration.
+The other flip has the purpose of moving an element to the correct position, via (flip(array, x + 1). 
+Due to this, the total number of flips in the worst case has an asymptotic complexity of Θ(n), as there are at most two flips per iteration, as was said above.
 
 //
 
