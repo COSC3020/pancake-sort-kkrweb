@@ -2,8 +2,8 @@
 // UWYO COSC 3020
 // 13 Feb 2025
 //
-//
 
+//
 
 function flip(array, n)
 {
