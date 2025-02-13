@@ -89,3 +89,4 @@ console.log(pancakeSort([8, 3, 6, 2, 9]));
 console.log(pancakeSort([1])); 
 console.log(pancakeSort([2, 1]));
 console.log(pancakeSort([]));
+*/
