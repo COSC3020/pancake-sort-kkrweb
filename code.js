@@ -4,9 +4,13 @@
 //
 //
 
+
+
 //work in progress
 // also doesnt pass either test in current state
 // good base to work from though I suppose
+
+
 
 function flip(array, n)
 {
@@ -79,14 +83,3 @@ function pancakeSort(array)
 
     return array;
 }
-
-
-
-/*
-//tests
-console.log(pancakeSort([100, 50, 25, 75, 10])); 
-console.log(pancakeSort([8, 3, 6, 2, 9])); 
-console.log(pancakeSort([1])); 
-console.log(pancakeSort([2, 1]));
-console.log(pancakeSort([]));
-*/
