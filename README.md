@@ -29,3 +29,44 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+//
+
+Start Date: 4 Feb 2025
+Response Added: 13 Feb 2025, prior to first feedback request
+
+
+Name: Kane Kriz
+
+//
+
+RESPONSE:
+The asymptotic runtime of my pancake sorting algorithm is as follows...separated as specified within the problem details:
+
+In terms of the number of comparisons of pancakes, the asymptotic runtime of the algorithm can be seen via considering the for loop in pancakeSort where it iterates through x = arrLen0-1 to x >= 1. 
+Each iteration of the loop makes approximately n comparisons to find the maximum element in the relevant, currently considered subarray.
+Since there are n iterations of this above process, the total number of comparisons has an asymptotic runtime of Θ(n^2).
+This quadratic runtime occurs due to the algorithm considering all elements to identify the maximum within each of the iterations.
+
+In terms of the number of flips, the asymptotic runtime of the algorithm can be seen as of linear complexity, Θ(n).
+The asymptotic runtime of the algorithm in this case is linear as in each iteration, the algorithm performs at most two possible flips.
+Following the correct implementation of pancakeSort, one of these flips is used to move the maximum element to the front of the array(flip(array, endPos + 1)).
+The other flip has the purpose of moving an element to the correct position, via (flip(array, x + 1). 
+Due to this, the total number of flips in the worst case has an asymptotic complexity of Θ(n), as there are at most two flips per iteration, as was said above.
+
+//
+
+Plagiarism Acknowledgement: I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+Resources Used, Citations:
+Reviewed applicable in class notes and slides.
+
+Was having trouble visualising pancake sort, along with its potential worst case handling. Used these sources to help remedy that:
+
+“Sort Visualizer.” Sortvisualizer.com, 2025, www.sortvisualizer.com/pancakesort/. Accessed 13 Feb. 2025.
+
+“Pancake Sorting.” Wolfram.com, Wolfram Research, Inc., 2025, mathworld.wolfram.com/PancakeSorting.html. Accessed 13 Feb. 2025.
+
+This Cal Berkeley lecture was helpful at a couple spots:
+Sandeep, Sai, and Venkatesan Guruswami. More Great Ideas in Theoretical Computer Science. https://people.eecs.berkeley.edu/~venkatg/teaching/15252-sp20/notes/sorting-pancakes.pdf. 2020. Accessed 13 Feb 2025
+
+
