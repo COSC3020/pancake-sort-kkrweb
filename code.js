@@ -1,6 +1,6 @@
 // Kane Kriz
 // UWYO COSC 3020
-// 10 Feb 2025
+// 13 Feb 2025
 //
 //
 
@@ -74,7 +74,7 @@ function pancakeSort(array)
         {
             array = flip(array, endPos + 1);
         }
-        array = flip(array, x);
+        array = flip(array, x + 1); //broken with x, functional with x+1? 
     }
 
     return array;
@@ -89,4 +89,3 @@ console.log(pancakeSort([8, 3, 6, 2, 9]));
 console.log(pancakeSort([1])); 
 console.log(pancakeSort([2, 1]));
 console.log(pancakeSort([]));
-*/
